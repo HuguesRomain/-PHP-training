@@ -50,13 +50,35 @@ switch($age){
 
 // LES BOUCLES 
 
-$repetitions = 0; 
-/* while($repetitions < 1000){
+/* $repetitions = 0; 
+while($repetitions < 1000){
   echo'<p>Je ne doit pas copier sur mon voisin.'.$repetitions.'</p>';     
   $repetitions++;
-} */
+}
 for($repetitions = 0; $repetitions < 10; $repetitions++){
   echo'<p>Je ne doit pas copier sur mon voisin.'.$repetitions.'</p>';     
-}
+} */
 
+
+// LES TABLEAU 
+/* $prenom[0] = 'Mathieu';
+$prenom[1] = 'Marie';
+$prenom[2] = 'Robert';  */
+
+/* $prenom = array('Mathieu','Marie', 'Robert'); 
+echo print_r($prenom); */
+
+
+$prenoms = array('Mathieu','Marie', 'Robert'); 
+$persons = array('nom' => 'Marie', 'prenom' => 'Robert', 'age' => 10); 
+/* print_r($person); */
+/* 
+for($numero = 0; $numero < 3; $numero++)
+{
+ echo '<p>'.$prenom[$numero].'</p>';
+} */
+foreach($persons as $libelle => $detail)
+{
+ echo '<p>'.$libelle.' = '.$detail.'</p>';
+}
 ?>
