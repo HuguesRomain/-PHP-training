@@ -8,7 +8,14 @@
 </head>
 <body>
   <p>
-  Bonjour <?php echo $_GET['nom']; ?> <?php echo $_GET['nom'] ?>
+  <?php if (isset($_GET['nom']) AND isset($_GET['prenom']))
+  {
+    echo 'Bonjour' .' '. $_GET['prenom'].' '.$_GET['nom'];
+  }
+  else
+  {
+    echo 'Pas de nom ou prénom défini'; 
+  } ?>
   </p>
 </body>
 </html>

@@ -8,7 +8,7 @@
 </head>
 <body>
   <p>
-  <a href="bonjour.php?nom=Romain&amp;prenom=Hugues">Dis-moi bonjourq</a>
+  <a href="bonjour.php?nom=Romain&amp;prenom=Hugues">Dis-moi bonjour</a>
   </p>
 </body>
 </html>
